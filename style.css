@@ -1,0 +1,206 @@
+/* font-family: 'Mulish', sans-serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
+}
+
+:root{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+}
+/* col-1 */
+
+#col-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img-1{
+    padding-bottom: 1.7rem;
+}
+.img-1 img{
+    max-width: 72rem;
+    max-height: 73rem;
+}
+
+
+#col-1{
+    margin-bottom: 9rem;
+}
+
+
+
+.text-1{
+    padding-bottom: 3.5rem;
+}
+.text-1 h1, .text-contact h2{
+    font-size: 3.2rem;
+    font-weight: 900;
+    color: #B52184;
+}
+
+.text-1 p {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #312D64;
+}
+
+#col-2 {
+    background: linear-gradient(96deg, #343193 0%, #302C63 99.68%);
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    align-items: center;
+}
+
+.card{
+    max-width: 35.2rem;
+    padding: 2.6rem;
+    background: #fff;
+    border-radius: 1.9rem;
+}
+
+.card .img-card{
+    padding-bottom: 2rem;
+}
+
+.text-card h2 {
+    color: #B52184;
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.text-card p{
+    padding-top: 2rem;
+    color: #312D64;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+#col-3{
+    padding: 5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.text-contact h2{
+    margin-bottom: 4rem;
+}
+
+.input-name input, .input-email input{
+    min-width: 35rem;
+    padding: 1.2rem 1.6rem 1.2rem 1.4rem;
+    border-radius: 16px;
+    border: 1.5px solid #312D64;
+    margin-bottom: 2.5rem;
+}
+
+.input-name input{
+    background: url(./assets/person-icon.svg) no-repeat left;
+    padding-left: 3rem;
+}
+
+.input-email input {
+    background: url(./assets/email-icon.svg) no-repeat left;
+    padding-left: 3rem;
+
+}
+
+
+
+.text-area textarea{
+    min-width: 35rem;
+    max-height: 10rem;
+    padding: 1.2rem 1.6rem 1.6rem;
+    border: 1.5px solid #312D64;
+    border-radius: 16px;
+}
+
+.contact button{
+    margin-top: 3.4rem;
+    padding: 1.6rem;
+    height: 4.5rem;
+    display: flex;
+    align-items: center;
+    border-radius: 16px;
+    border: 0;
+    background: linear-gradient(96deg, #343193 0%, #302C63 99.68%);
+    color: #fff;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    font-weight: 700;
+}
+
+footer{
+    background: linear-gradient(96deg, #343193 0%, #302C63 99.68%);
+    color: #FFF;
+    text-align: center;
+    font-size: 1.9rem;
+    font-weight: 600;
+    padding: 1.6rem;
+
+}
+
+@media (min-width:1235px){
+    #col-1{
+        flex-direction: row-reverse;
+        justify-content:space-around;
+    }
+    .img-1 img{
+       width: 719px;
+       height: 732px;
+    }
+    .text-1 h1{
+        font-size: 6rem;
+    }
+    .text-1 p{
+        font-size: 3.2rem;
+    }
+
+    #col-1 .icon-arrow{
+        padding-top: 50rem;
+    }
+
+    #col-2{
+        flex-direction: row;
+        justify-content: center;
+        gap: 6rem;
+    }
+    .card{
+        padding: 3.2rem;
+        height: 45rem;
+    }
+
+    .card .img-card{
+        padding-bottom: 4rem;
+    }
+
+    .text-card h2{
+        font-size: 3.5rem;
+    }
+    .text-card p{
+        font-size: 1.9rem;
+    }
+
+    #col-3{
+        height: 61.2rem;
+        background:url(./assets/stars.jpg) no-repeat right;
+        justify-content: flex-start;
+    }
+
+    .contact{
+        margin-top: 6rem;
+        padding-left: 5rem;
+    }
+
+    .input-name input, .input-email input, .text-area textarea{
+        min-width: 60rem;
+    }
+}
